@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nali & Marek Escape Room 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="room">
+    <h1>Relationship Escape Room 💖</h1>
+    <p class="subtitle">Solve the clues to unlock the final love message.</p>
+
+    <div class="card">
+      <h2>Clue 1</h2>
+      <p>What month did we first connect?</p>
+      <input id="answer1" placeholder="Type your answer..." />
+      <button onclick="checkAnswer(1, 'june', '0')">Unlock</button>
+      <p id="result1"></p>
+    </div>
+
+    <div class="card">
+      <h2>Clue 2</h2>
+      <p>Which convenience store did we first meet?</p>
+      <input id="answer2" placeholder="Type your answer..." />
+      <button onclick="checkAnswer(2, '7/11', '7')">Unlock</button>
+      <p id="result2"></p>
+    </div>
+
+    <div class="card">
+      <h2>Clue 3</h2>
+      <p>Where was our first dine-in experience?</p>
+      <input id="answer3" placeholder="Type your answer..." />
+      <button onclick="checkAnswer(3, 'dennys', '1')">Unlock</button>
+      <p id="result3"></p>
+    </div>
+
+    <div class="card">
+      <h2>Clue 4</h2>
+      <p>Where was our first amusement park experience?</p>
+      <input id="answer4" placeholder="Type your answer..." />
+      <button onclick="checkAnswer(4, 'playland', '4')">Unlock</button>
+      <p id="result4"></p>
+    </div>
+
+    <div class="card">
+      <h2>Clue 5</h2>
+      <p>Where was our second park date?</p>
+      <input id="answer5" placeholder="Type your answer..." />
+      <button onclick="checkAnswer(5, 'deer lake park', '💖')">Unlock</button>
+      <p id="result5"></p>
+    </div>
+
+    <div class="final-box">
+      <h2>Final Lock 🔐</h2>
+      <p>Enter the 4-digit code you unlocked.</p>
+      <input id="finalCode" placeholder="Enter code..." />
+      <button onclick="unlockFinal()">Open</button>
+      <p id="finalResult"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
